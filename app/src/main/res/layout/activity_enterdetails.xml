@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+ <!--   <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:src="@mipmap/ic_location" />
+
+            <com.ameca.widget.LightEditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greyborderrectangle"
+                android:drawableLeft="@mipmap/icon11_1"
+                android:drawablePadding="1dp0"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_card_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:padding="1dp0"
+                android:textColor="@color/text_hint_color"
+                android:textSize="@dimen/sp_14" />
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_valid_card_number"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.ameca.widget.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp0"
+                android:paddingTop="1dp0"
+                android:text="@string/enter_expiry_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.ameca.widget.LightEditText
+                    android:id="@+id/etExpiryDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyborderrectangle"
+                    android:drawablePadding="1dp0"
+                    android:hint="@string/mm_yy"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:padding="1dp0"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.ameca.widget.LightEditText
+                    android:id="@+id/etCvvNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyborderrectangle"
+                    android:drawablePadding="1dp0"
+                    android:hint="@string/cvv"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:padding="1dp0"
+                    android:textSize="@dimen/sp_14" />
+
+
+                &lt;!&ndash;<FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="@drawable/greyborderrectangle"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <Spinner
+                        android:id="@+id/spMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|right|center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:src="@mipmap/ic_arrow" />
+
+                    <com.ameca.widget.LightTextView
+                        android:id="@+id/etMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/greyborderrectangle"
+                        android:drawableRight="@mipmap/ic_arrow"
+                        android:enabled="false"
+                        android:padding="1dp0"
+                        android:text="@string/mm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1dp5"
+                    android:layout_height="0dp" />&ndash;&gt;
+
+                &lt;!&ndash;<FrameLayout&ndash;&gt;
+                &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_weight=".7"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/greyborderrectangle"&ndash;&gt;
+                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                &lt;!&ndash;android:padding="8dp">&ndash;&gt;
+
+                &lt;!&ndash;<Spinner&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/spYear"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;
+                &lt;!&ndash;android:background="@null"&ndash;&gt;
+                &lt;!&ndash;android:gravity="left|center"&ndash;&gt;
+                &lt;!&ndash;android:visibility="visible" />&ndash;&gt;
+
+                &lt;!&ndash;<ImageView&ndash;&gt;
+                &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:layout_gravity="end|right|center_vertical"&ndash;&gt;
+                &lt;!&ndash;android:contentDescription="@string/app_name"&ndash;&gt;
+                &lt;!&ndash;android:paddingLeft="5dp"&ndash;&gt;
+                &lt;!&ndash;android:paddingRight="5dp"&ndash;&gt;
+                &lt;!&ndash;android:src="@mipmap/ic_arrow" />&ndash;&gt;
+
+                &lt;!&ndash;<com.ameca.widget.LightTextView&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/etYear"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/greyborderrectangle"&ndash;&gt;
+                &lt;!&ndash;android:drawableRight="@mipmap/ic_arrow"&ndash;&gt;
+                &lt;!&ndash;android:enabled="false"&ndash;&gt;
+                &lt;!&ndash;android:padding="1dp0"&ndash;&gt;
+                &lt;!&ndash;android:text="@string/yyyy"&ndash;&gt;
+                &lt;!&ndash;android:textColor="@color/black"&ndash;&gt;
+                &lt;!&ndash;android:textSize="@dimen/sp_15"&ndash;&gt;
+                &lt;!&ndash;android:visibility="gone" />&ndash;&gt;
+                &lt;!&ndash;</FrameLayout>&ndash;&gt;
+            </LinearLayout>
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_a_month"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrCvvNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_a_valid_cvv_number"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.ameca.widget.LightEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/greyborderrectangle"
+                android:drawableLeft="@mipmap/ic_message"
+                android:drawablePadding="1dp0"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="60"
+                android:maxLines="1"
+                android:padding="1dp0"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_a_valid_postal_code"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.ameca.widget.LightEditText
+                android:id="@+id/etPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/greyborderrectangle"
+                android:drawableLeft="@mipmap/icon10_1"
+                android:drawablePadding="1dp0"
+                android:hint="@string/zip_postal_code"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="1dp0"
+                android:textSize="@dimen/sp_14" />
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_a_valid_postal_code"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.ameca.widget.LightEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/greyborderrectangle"
+                android:drawableLeft="@mipmap/icon1_1"
+                android:drawablePadding="1dp0"
+                android:hint="@string/card_nickname_e_g_red_visa"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="1dp0"
+                android:textSize="@dimen/sp_14" />
+
+            <com.ameca.widget.LightTextView
+                android:id="@+id/tvErrName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_a_month"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <com.stripe.android.view.CardInputWidget
+                android:id="@+id/cardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                     />
+
+                <com.ameca.widget.RegularTextView
+                    android:id="@+id/tvPaymentSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>-->
+</LinearLayout>

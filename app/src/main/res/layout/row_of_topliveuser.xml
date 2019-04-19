@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.videos.VideosContentList" />
+    </data>
+
+
+
+    <LinearLayout
+        android:id="@+id/li_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/dp_5"
+            app:font_name="monSemibold"
+            android:background="@drawable/shape_rect"
+            android:textSize="14sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTopList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_10"
+    android:background="@drawable/bg_row"
+    android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_gymTranning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.5"
+            android:src="@drawable/ic_image"
+            android:contentDescription="@string/video" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/city_dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/gym_time"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:font_name="monAlSemi"/>
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/city_dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="16sp"
+            app:font_name="monAlRegular"/>
+
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/city_dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/golds_gym_wintergreen_plaza"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:font_name="monAlRegular"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingTop="@dimen/sp_15"
+            android:paddingBottom="@dimen/dp_10"
+            android:background="@drawable/bg_row"
+            android:layout_marginTop="@dimen/city_dp_25">
+
+
+            <com.hobbyer.android.widgets.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/total_amount"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:font_name="monmedium"/>
+
+            <com.hobbyer.android.widgets.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_60_points"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:font_name="monAlRegular"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="@dimen/city_dp_25"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/confirm_reservation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_17" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/city_dp_25"
+            android:text="@string/please_note_this_class_occours_within"
+            android:textSize="18sp"
+            app:font_name="monRegular"/>
+
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/_12_hours_and_cancellation"
+            android:textSize="18sp"
+            app:font_name="monRegular"/>
+    </LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/li_root"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:onClick="@{(v) -> onItemClick.onItemClickListener()}"
+        android:background="@drawable/shape_rect"
+        android:scaleType="fitXY"
+         />
+
+        <TextView
+            android:id="@+id/tvIntroSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvIntroSeriesdef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvIntroSeries"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>

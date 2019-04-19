@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.fragment.profileviewmodel.ProfileFragmentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/mMainActivitysr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nestedscroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    app:layout_anchorGravity="end|bottom|center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/fragProf_dp1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/profile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="4dp"
+                            android:paddingBottom="24dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true">
+                                <FrameLayout
+                                    android:id="@+id/flProfile"
+                                    android:layout_width="130dp"
+                                    android:layout_height="130dp"
+                                    android:background="@drawable/bg_profile_circle"
+
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    >
+
+
+                                <com.hobbyer.android.widget.CircularImageView
+                                    android:id="@+id/imUserImage"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:elevation="3dp"
+                                    android:padding="20dp"
+                                    android:layout_margin="5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/img_568656"
+                                    app:border="true"
+                                    app:border_width="2dp" />
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/tvUserName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/flProfile"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:text="gdfg"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/imEdit"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="127dp"
+                                android:layout_marginTop="100dp"
+                                android:src="@mipmap/invalid_name" />
+                        </RelativeLayout> <!--                                 <RelativeLayout
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:visibility="gone"
+                                      android:layout_alignParentStart="true"
+                                      android:layout_alignParentTop="true">
+
+                                      <com.hobbyer.android.widget.CircularImageView
+                                          android:id="@+id/imUserImage"
+                                          android:layout_width="120dp"
+                                          android:layout_height="120dp"
+                                          android:layout_alignParentTop="true"
+                                          android:layout_centerHorizontal="true"
+                                          android:elevation="3dp"
+                                          android:padding="20dp"
+                                          android:scaleType="fitXY"
+                                          android:src="@drawable/ic_avtar"
+                                          app:border="true"
+                                          app:border_color="@color/notification_action_color_filter"
+                                          app:border_width="2dp" />
+
+                                      <com.hobbyer.android.widgets.MyTextView
+                                          android:id="@+id/tvUserName"
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_below="@+id/imUserImage"
+                                          android:layout_centerHorizontal="true"
+                                          android:gravity="center_horizontal"
+                                          android:text="gdfg"
+                                          app:font_name="monmedium"
+                                          android:textColor="@color/black"
+                                          android:textSize="14sp"
+                                          android:textStyle="bold" />
+                                  </RelativeLayout>
+
+                            <FrameLayout
+                                android:id="@+id/flProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+
+                                android:layout_centerInParent="true">
+
+                                <com.hobbyer.android.widget.CircularImageView
+                                    android:id="@+id/imUserImage"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_point"
+                                    app:border="true"
+                                    app:border_width="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/imEdit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|end"
+                                    android:src="@mipmap/invalid_name" />
+
+
+                            </FrameLayout>
+
+                            <com.hobbyer.android.widgets.MyTextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/flProfile"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:text="gdfg"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:font_name="monmedium" />-->
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/mHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/rectangle_black"
+                                android:orientation="horizontal"
+                                android:padding="0dp"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.34"
+                                    android:orientation="vertical">
+
+                                    <com.hobbyer.android.widgets.MyTextView
+                                        android:id="@+id/mPasts"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="1dp"
+                                        android:background="@color/black"
+                                        android:gravity="center"
+                                        android:padding="0dp"
+                                        android:textColor="@color/yellow"
+
+
+                                        android:textSize="15sp"
+                                        app:font_name="monAlRegular" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/space"
+                                    android:padding="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.34">
+
+                                    <com.hobbyer.android.widgets.MyTextView
+                                        android:id="@+id/mFavourites"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="1dp"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        app:font_name="monAlRegular" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/space"
+                                    android:padding="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.34">
+
+                                    <com.hobbyer.android.widgets.MyTextView
+                                        android:id="@+id/mFriends"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="1dp"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        app:font_name="monAlRegular" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_10"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/llClasses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp_20"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_yellow_outline"
+                                    android:padding="@dimen/sign_dp_10">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/bg_yellow"
+                                        android:gravity="center"
+                                        android:text="50"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center"
+                                    android:text="10 classes"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llStrength"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/dp_20"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_yellow_outline"
+                                    android:padding="@dimen/sign_dp_10">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/bg_yellow"
+                                        android:gravity="center"
+                                        android:padding="@dimen/dp_10"
+                                        android:src="@mipmap/ic_strength" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Strength"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llFriendcClasses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="@dimen/dp_20"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="@dimen/dp_20"
+                                    android:background="@drawable/bg_yellow_outline"
+                                    android:padding="@dimen/sign_dp_10">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/bg_yellow"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+
+                                        />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="20 classes"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/mHeader"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/Fragment_Container"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                            </FrameLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.activity.otpviewmodel.OtpViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+         <!--       <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent"
+                    android:orientation="horizontal"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <LinearLayout
+                        android:id="@+id/mBackLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.100"
+                        android:gravity="left|center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/mBackImageView"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/ic_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.90"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/city_dp_20"
+                    android:layout_marginTop="@dimen/dp_otp_30"
+                    android:layout_marginRight="@dimen/city_dp_20"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/ic_otp_logo"
+                        android:padding="@dimen/dp_70"
+                        android:scaleType="centerCrop" />
+
+                    <com.hobbyer.android.widgets.MyTextView
+                        android:id="@+id/or"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_otp_30"
+                        android:gravity="center"
+                        android:lines="3"
+                        app:font_name="monRegular"
+                        android:text="@string/please_otp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sign_dp_12"
+                        android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/passcode_container"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <com.chaos.view.PinView
+                                android:id="@+id/pinViewOtp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                style="@style/PinWidget.PinView"
+                                android:cursorVisible="true"
+                                android:hint="*****"
+
+                                android:layout_marginLeft="40dp"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="@dimen/city_dp_20"
+                        android:layout_marginRight="@dimen/city_dp_20"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.45"
+
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp">
+
+                            <com.hobbyer.android.widget.customfonts.MyTextView
+                                android:id="@+id/tvResend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoLink="all"
+                                android:text="@string/rest_otp"
+                                android:onClick="@{(v)->viewModel.onClickView(v)}"
+                                android:textColor="@color/hint_text"
+                                android:textSize="@dimen/sign_dp_12"
+                                app:font_name="monAlSemi"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mOtpSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sign_dp_40"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/city_dp_20"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="@dimen/city_dp_20"
+                        android:background="@drawable/bg_button_yellow"
+                        android:gravity="center_vertical"
+                        android:onClick="@{(v)->viewModel.onClickView(v)}"
+                        android:orientation="horizontal"
+                        android:paddingLeft="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0000"
+                            android:drawablePadding="7dp"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:padding="2dp"
+                            android:text="@string/submit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sign_dp_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

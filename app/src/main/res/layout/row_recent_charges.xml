@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_row"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tv_memberName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/member_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+
+                    app:font_name="monRegular" />
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_zyno"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+                    app:font_name="monRegular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="3dp"
+                android:orientation="horizontal">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+                    app:font_name="monRegular" />
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tv_dateFormat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_format"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+                    app:font_name="monRegular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tv_RecentCharges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recent_charges"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+                    app:font_name="monRegular" />
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tvRecentChargeFormat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_charges_format"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_17"
+                    app:font_name="monRegular" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</layout>

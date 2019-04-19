@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyTextView2">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomTextView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MyTextView">
+        <attr name="font_name" format="reference">
+            <enum name="monRegular" value="1" />
+            <enum name="monSemibold" value="2" />
+            <enum name="monAlRegular" value="3" />
+            <enum name="monAlSemi" value="4" />
+            <enum name="monExtra" value="5" />
+            <enum name="monBold" value="6" />
+            <enum name="monmedium" value="7" />
+            <enum name="m_light" value="8" />
+            <enum name="m_medium" value="9" />
+        </attr>
+        <attr name="et_title" format="string" />
+        <attr name="delete_button_res" format="reference" />
+    </declare-styleable>
+    MontserratAlternates-Medium
+
+</resources>

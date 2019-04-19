@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <com.hobbyer.android.widget.CircularImageView
+        android:id="@+id/imUserImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avtar"
+        app:border="true"
+        app:border_color="@color/notification_action_color_filter"
+        app:border_width="2dp" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/imUserImage"
+        android:layout_toLeftOf="@+id/imgMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/mUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:singleLine="true"
+            android:text="@string/txt_block_user"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:font_name="monAlRegular" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/mUserLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:singleLine="true"
+            android:text="@string/txt_block_user"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:font_name="monAlRegular" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/mUserPastClass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:singleLine="true"
+            android:text="@string/txt_block_user"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:font_name="monAlRegular" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/mUserUpcomingClass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:singleLine="true"
+            android:text="@string/txt_block_user"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:font_name="monAlRegular" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/mUserFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:singleLine="true"
+            android:text="@string/txt_block_user"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:font_name="monAlRegular" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgMore"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu"/>
+
+
+
+</RelativeLayout>

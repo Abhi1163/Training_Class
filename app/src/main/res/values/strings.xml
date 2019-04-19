@@ -1,0 +1,313 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hobbyer</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Already have an account? Login</string>
+    <string name="tutorial_screen">Tutorial</string>
+    <string name="find_your_city">Find Your City</string>
+    <string name="your_city_status">Our Studios and Classes vary by city. What neighbourhood will you be working out in?</string>
+    <string name="current_location">Use My Current Location</string>
+    <string name="address">Address or City</string>
+    <string name="facebook_login">Continue with Facebook</string>
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Me</string>
+    <string name="forget_password"><u>Forgot Password?</u></string>
+    <string name="login"><u>LOGIN</u></string>
+    <string name="logins">LOGIN</string>
+    <string name="new_user">New User?</string>
+    <string name="sing_up">  Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="conf_password">Confirm password</string>
+    <string name="forget_passwords">Forgot Password</string>
+    <string name="passwords">Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="choose_from_gallery">Gallery</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="take_photo">Camera</string>
+    <string name="please_wait_">Please Wait…</string>
+    <string name="agree">I agree to  the <u>Terms &amp; Services</u></string>
+    <string name="msg_network_error">Please check your internet connection</string>
+    <string name="already">Already User?</string>
+    <string name="location_tracker">Location Tracker</string>
+    <string name="location_client_is_connected" tools:ignore="TypographyEllipsis">Location client is connected...</string>
+    <string name="location_client_is_going_to_connect" tools:ignore="TypographyEllipsis">Location client is going to connected...</string>
+    <string name="start_update" tools:ignore="TypographyEllipsis">Iniciar la actualización...</string>
+    <string name="start_periodics_updates" tools:ignore="TypographyEllipsis">start periodic updates...</string>
+    <string name="on_connected" tools:ignore="TypographyEllipsis">on connected...</string>
+    <string name="connection_suspended">Conexión suspendida</string>
+    <string name="unable_to_fetch_current_location">No se puede recuperar la ubicación actual</string>
+    <string name="on_connection_failed" tools:ignore="TypographyEllipsis">on connection Failed...</string>
+    <string name="on_location_changed" tools:ignore="TypographyEllipsis">on location changed...</string>
+    <string name="enter_mail">We are not available at your location right now  </string>
+    <string name="please_otp">Please enter your OTP number.</string>
+    <string name="rest_otp"><u>Resend OTP</u></string>
+    <string name="reset_password">Reset your password</string>
+    <string name="new_password">New Password</string>
+    <string name="phone">Phone Number</string>
+    <string name="sent">SENT</string>
+    <string name="pasts">Pasts(10)</string>
+    <string name="favourites">Favourites(10)</string>
+    <string name="friends">Friends(10)</string>
+    <string name="accept">Accept</string>
+    <string name="ignore">Ignore</string>
+    <string name="block">Block</string>
+    <string name="facebook_app_id">759844201064339</string>
+    <string name="phone_number">Enter Your Register Phone number</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="please_enter_first_name">*Please enter first name.</string>
+    <string name="please_enter_valid_name">*Please enter valid name.</string>
+    <string name="please_enter_last_name">*Please enter last name.</string>
+    <string name="please_enter_email">*Please enter email.</string>
+    <string name="please_enter_different_email">*Please enter different email.</string>
+    <string name="please_enter_help">*Please Enter Help.</string>
+    <string name="please_enter_Subject">*Please Enter Subject.</string>
+    <string name="please_enter_description">*Please enter description.</string>
+    <string name="please_enter_valid_email">*Please enter valid email.</string>
+    <string name="please_enter_password">*Please enter password.</string>
+    <string name="please_enter_valid_password">*Password must contain at least 8 characters.</string>
+    <string name="please_enter_confirm_password">*Please enter confirm password.</string>
+    <string name="please_enter_valid_confirm_password">*Password and confirm password should be same.</string>
+    <string name="password_mismatch">Both password should be same</string>
+    <string name="add_friends">Add Friends</string>
+    <string name="sing_up_login">\u0020<u> Sign Up</u></string>
+    <!--Navigation-->
+    <string name="forgot">Forgot Password</string>
+    <string name="rest">Reset Password</string>
+    <string name="faq_t">FAQ</string>
+    <string name="free">Free Trail</string>
+    <string name="review_screen">Review</string>
+    <string name="how_do_text">Lorem ipsum dolor sit amet, consectetur adipisc
+ing elit. Aenean euismod bibendum laoreet. Pro
+in gravida dolor sit amet lacus accumsan et viverr
+a justo commodo. Proin sodales pulvinar tempor.
+Cum sociis natoque penatibus et magnis dis part
+urient montes, nascetur ridiculus mus. Nam ferm
+entum, nulla luctus pharetra vulputate, felis tellus
+mollis orci, sed rhoncus sapien nunc eget</string>
+
+    <string name="home">Home</string>
+    <string name="find_class">Find a Class</string>
+    <string name="video">Browse Video</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="toprating">Top Rating Class</string>
+    <string name="profile">Profile </string>
+    <string name="refer">Refer and Earn</string>
+    <string name="setting">Settings</string>
+    <string name="booking">Top Rating Studios</string>
+    <string name="Logout">Logout</string>
+    <string name="account">Account</string>
+    <string name="saswati_padhi">Saswati Padhi</string>
+    <string name="padhi_saswati_gmail_com">padhi.saswati@gmail.com</string>
+    <string name="manage_contact_information">Manage billing Information </string>
+    <string name="privacy">Privacy</string>
+    <string name="manage_privacy_settings">Manage Privacy Settings</string>
+    <string name="membership">Membership</string>
+    <string name="your_current_plan">Your Current Plan</string>
+    <string name="next_cycle_beings_feb_2">Next cycle beings Feb 2</string>
+    <string name="_100_of_45_credits">100% of 45 Credits</string>
+    <string name="_45_credits_per_month_3_visits_to_each_studio_per_month">45 Credits per month 3 visits to each studio per month</string>
+    <string name="add_points_to_your_cycle">Add points to your cycle</string>
+    <string name="manage_your_plan">Manage your plan</string>
+    <string name="billing">Billing</string>
+    <string name="manage_contact_information1">Manage Contact Information</string>
+    <string name="see_recent_charges">See Recent Charges</string>
+    <string name="support">Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_poilicy">Privacy Policy</string>
+    <string name="community_guidelines">Community Guidelines</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="common">Common Questions</string>
+    <string name="how_do">How do I book classes using credits?</string>
+    <string name="how_can">Can I pause my membership?</string>
+
+    <string name="search">Search</string>
+    <!--Settings-->
+
+
+    <string name="trialText1">You get 45 credits to book whatever classes you want . Trial begins the day you activate.</string>
+    <string name="trialText2">Book classes at any studio in our network. Credit rates vary by class.</string>
+    <string name="trialText3">If you`re not loving it, cancel anytime during your trial and you won`t changed.</string>
+
+
+    <string name="logout">Logout</string>
+    <string name="are_you">Are you sure you want to log out from \n the application?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--location-->
+    <string name="location_title">Confirm Location</string>
+    <string name="confirm">Confirm</string>
+    <string name="update_details">Update my account details</string>
+    <string name="email_different">Your Class Pass email address(If different)</string>
+    <string name="help">How can we help?</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="attachment">Attachment</string>
+    <string name="please_choice_your_issue_below">Please choose your issue below</string>
+    <string name="submit_a_request">Submit a request</string>
+    <array name="select_city">
+        <item name="Singapore">Singapore</item>
+        <item name="Singapore">Malaysia</item>
+        <item name="Singapore">New York</item>
+        <item name="Singapore">California</item>
+        <item name="Singapore">Queen</item>
+    </array>
+    <array name="update_details">
+        <item name="Singapore">Update my account details</item>
+        <item name="Singapore">Mange my Plan</item>
+        <item name="Singapore">Billing Inquiry</item>
+    </array>
+    <string name="comming">Coming Soon</string>
+    <string name="er_email">*Please enter valid email.</string>
+    <string name="er_password">*Please enter valid password.</string>
+
+    <string name="privacy_agree">You agree to the<b><u>Terms of Use and</u></b></string>
+    <string name="add_point">Add Point</string>
+    <string name="manage_plan">Manage Your Plan</string>
+    <string name="rewards">450 points</string>
+    <string name="name">Name on Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="manage_billing_information">Manage billing information</string>
+    <string name="faqtool">FAQ</string>
+    <string name="member_name">Member Name</string>
+    <string name="name_zyno">Zyno Yang</string>
+    <string name="date">Date</string>
+    <string name="date_format">1/3/2018 To 1/3/2019</string>
+    <string name="recent_charges">Recent Charges</string>
+    <string name="recent_charges_format">1/3/2019</string>
+    <string name="text">Los angeles/Orange Country 20 points pack$5.00 </string>
+    <string name="print_page">PRINT PAGE</string>
+    <string name="share">Share</string>
+    <string name="invitation">Invite a Friend on Hobbyer</string>
+    <string name="start_time">Start Time</string>
+    <string name="_4_00_am_to_11_00_pm">4:00am to 11:00pm</string>
+    <string name="points">Points</string>
+    <string name="_20_to_30_points">20 to 30 points</string>
+    <string name="location">Location</string>
+    <string name="london">London</string>
+    <string name="activity">Activity</string>
+    <string name="recent_charge">Recent Charges</string>
+    <string name="privacy_setting">Privacy Setting</string>
+    <string name="refine_search">Refine Search</string>
+    <string name="clear_all">Clear All</string>
+    <string name="please_enter_dob">*Please enter date of birth.</string>
+    <string name="please_enter_phone">*Please enter phone number.</string>
+    <string name="please_enter_valid_phone">*Please enter valid phone number.</string>
+    <string name="please_enter_street">*Please enter street.</string>
+    <string name="please_enter_apartment">*Please enter apartment address.</string>
+    <string name="please_enter_city">*Please enter city.</string>
+    <string name="please_enter_emergencycontact">*Please enter emergency phone number.</string>
+    <string name="please_enter_emergencyname">*Please enter emergency name.</string>
+    <string name="phone_Number">Add Phone Number</string>
+    <string name="phone_nu">Enter Your Phone number</string>
+    <string name="my_booking">My Booking</string>
+    <string name="gym_time">Gym Time</string>
+    <string name="about_content">In the mood for some solo time on the treadmill,elliptical, or weight machines? Reserve one hour of open gym time!</string>
+    <string name="intro_series">Intro Series</string>
+
+
+    <!-- font style name-->
+    <string name="font_montserrat_alternates_Regular" translatable="false">fonts/MontserratAlternates-Regular.ttf</string>
+    <string name="font_roboto_medium" translatable="false">fonts/Roboto-Medium.ttf</string>
+
+
+    <string name="nameDigits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- Billing -->
+    <string name="add_card">Add Card</string>
+    <string name="name_on_card">Name On Card</string>
+    <string name="expiration_date">Expiry Date(MM/YYYY)</string>
+    <string name="cvv">CVC</string>
+    <string name="card_numbers">Card Number</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="we_re_not_in_your_city">We\'re not in your city.</string>
+    <string name="messageEmail">If you\'d like us to email when\nHobbyer is available near you, and to\n get offers, promos and similar \n communications, enter your email. \n Unsubscribe any time.</string>
+    <string name="keepme">Keep me updated</string>
+    <string name="share_the_app">Share the app with friend to get points \n     in your wallets</string>
+    <string name="stripe_publisher_key">pk_test_bLDaOJwrMgsBCWL9FTZC1PfW</string>
+    <string name="enter_valid_expiry_date">*Please enter valid expiry date</string>
+    <string name="purchase_pan">Purchase more points without charging your monthly plan with this one-time addition. If you don\'t use all of your points, up to 100 points will roll over to your next month</string>
+    <string name="your_current_plans">Your Current Plan</string>
+    <string name="_100_off_450_points">100%off 450 points</string>
+    <string name="credits_added">Your Points will be added to your  account immediately.</string>
+    <string name="your_months_reset">       Your months resets on february  01,1,2019,at which point up to 10 points  will automatically roll over.</string>
+    <string name="credit_purchase">Points purchases are a one -time \n  charge and non- refundable.</string>
+    <string name="something_went">Something went wrong</string>
+    <string name="_0_completed">0 Completed</string>
+    <string name="_0_upcoming">0 Upcoming</string>
+    <string name="let_s_go">Let\'s GO !</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="find_a_class_take_it_for_free_start_trial">Find a class</string>
+    <string name="add_more_points">Add more points</string>
+    <string name="billing_information">Billing information</string>
+    <string name="updated_card">Updated card</string>
+    <string name="billing_postal_code">Billing Postal Code</string>
+    <string name="save">Save</string>
+    <string name="golds_gym_wintergreen_plaza">Golds Gym-wintergreen Plaza</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="_60_points">60 Points</string>
+    <string name="confirm_reservation">confirm Reservation</string>
+    <string name="please_note_this_class_occours_within">Please note this class occours within</string>
+    <string name="_12_hours_and_cancellation">12 hours and cancellation</string>
+    <string name="done">Done</string>
+    <string name="upcoming_classes">Upcoming Classes</string>
+    <string name="past_classes">Past Classes</string>
+    <string name="favourite_classes">Favourite Classes</string>
+    <string name="what_can_approved_friends_see">What can approved friends see?</string>
+    <string name="classpass_members_wll_only_be_able_to_see_your_full_name_profile_photo_and_city_nothing_else_will_be_shared_until_you_accept_a_friend_request">Hobbyer members will only be able to see your full name, profile photo, and city. Nothing else will be shared until you accept a friend request.</string>
+    <string name="who_can_find_me">Who can find me?</string>
+    <string name="choose_member">Choose membership</string>
+    <string name="saveandcontinue">Save And Continue</string>
+    <string name="saveChange">Save Change</string>
+    <string name="isfrom">isFrom</string>
+    <string name="savechnge">Save Change</string>
+    <string name="saveandconti">Save And Continue</string>
+    <string name="comments">Comments</string>
+    <string name="search_location">Search Location</string>
+    <string name="_10_30_pm">10:30 pm</string>
+    <string name="to">to</string>
+
+
+    <string name="txt_firnds">Friends</string>
+    <string name="txt_block_user">Block User</string>
+    <string name="txt_past_class">Past class</string>
+    <string name="txt_upconing_class">Upcoming class</string>
+    <string name="txt_favorite_class">Favorite strudions</string>
+    <string name="txt_unblock">Unblock</string>
+    <string name="txt_unfriend">Unfriend</string>
+    <string name="txt_block">Block</string>
+    <string name="txt_accept">Accept</string>
+    <string name="txt_ignore">Ignore</string>
+    <string name="txt_search_by_name">Search by name</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_sent">Sent</string>
+    <string name="txt_add">Add</string>
+    <string name="no_data_found">No user found</string>
+    <string name="txt_manage_plan">Manage Your Plan</string>
+    <string name="txt_manage_plan_desc">To switch plans next month,choose any plan below.To get more points today,switch  to a higher  credit plan, or purchase an add -on points pack.</string>
+    <string name="txt_current_plan">Current Plan</string>
+    <string name="txt_review_selection">Review Your Selection</string>
+    <string name="txt_effect_line">This will take effect on February 2</string>
+    <string name="txt_member_desc">By switching plans you agree that begining  on the dtae indicated above, you will automatically be charged each month for your new plan until you cancel, which you do  on the site at any time.</string>
+    <string name="terms_of_use"><u> Terms of use</u></string>
+    <string name="privacy_poilicy_membership"><u>Privacy Policy</u></string>
+    <string name="txt_congrats">Congratulations</string>
+    <string name="txt_success_dialog">Your plan has changed succesfully.</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="no_class_found">No Class Found.</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remote_message">message</string>
+    <string name="from">from</string>
+    <string name="remote_message_data">remote messgae data</string>
+
+
+</resources>

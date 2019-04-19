@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.activity.freetrailviewmodel.ViewModelFreeTrail" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/back">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/toolbar"
+                        layout="@layout/toolbar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--   <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="?attr/actionBarSize"
+                               android:orientation="horizontal"
+                               android:layout_gravity="center"
+                               android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                               android:background="@color/colorAccent">
+                               <LinearLayout
+                                   android:id="@+id/mBackLayout"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="0.100"
+                                   android:gravity="left|center"
+                                   android:visibility="visible"
+                                   android:orientation="horizontal">
+
+                                   <ImageView
+                                       android:id="@+id/mBackImageview"
+                                       android:layout_width="30dp"
+                                       android:layout_height="30dp"
+                                       android:layout_alignParentLeft="true"
+                                       android:layout_centerVertical="true"
+                                       android:layout_marginLeft="5dp"
+                                       android:src="@mipmap/ic_back" />
+
+                               </LinearLayout>
+                               <LinearLayout
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="0.90"
+                                   android:gravity="center"
+                                   android:orientation="vertical">
+                                   <TextView
+                                       android:layout_weight="1"
+                                       android:id="@+id/name"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:gravity="center"
+                                       android:textColor="@color/black"
+                                       android:textSize="15dp"
+                                       android:textStyle="bold"
+                                       android:text="@string/free"/>
+
+                               </LinearLayout>
+
+
+                           </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_boder"
+                            android:orientation="vertical">
+
+                            <com.hobbyer.android.widgets.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:text="First Week Free"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font_name="monAlRegular"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#40000000" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-15dp"
+                            android:background="@drawable/bg_text_black"
+                            android:padding="@dimen/dp_10"
+                            android:paddingStart="30dp"
+                            android:paddingEnd="30dp"
+                            android:text="Here's The Deal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/trial_dp2"
+                            app:font_name="monmedium"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="25dp"
+                            android:padding="@dimen/dp_10"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@drawable/bg_boder">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/trial_dp5">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_point" />
+                            </LinearLayout>
+
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:lineSpacingExtra="3dp"
+                                    android:text="@string/trialText1"
+                                    android:textSize="@dimen/sp_15"
+                                    app:font_name="monAlRegular"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:padding="@dimen/dp_20"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@drawable/bg_boder">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/trial_dp5">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:src="@mipmap/ic_book_sel" />
+                            </LinearLayout>
+
+
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:lineSpacingExtra="3dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/trialText2"
+                                    android:textSize="@dimen/sp_15"
+                                    app:font_name="monAlRegular"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="15dp"
+                            android:padding="@dimen/dp_10"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@drawable/bg_boder">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/trial_dp5">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_living" />
+                            </LinearLayout>
+
+
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:lineSpacingExtra="3dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/trialText3"
+                                    android:textSize="@dimen/sp_15"
+                                    app:font_name="monAlRegular"
+                                    />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/trial_dp4"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/trial_dp3"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/bg_button_yellow"
+                            android:onClick="@{(v)->viewModel.onClickView(v)}"
+                            android:paddingStart="90dp"
+                            android:paddingEnd="90dp"
+                            android:text="Continue"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

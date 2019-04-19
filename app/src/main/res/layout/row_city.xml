@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.searchcity.CityContentList" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_rect_ripple"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/mItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp">
+        <ProgressBar
+            android:id="@+id/mSearchProgressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mRestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textAlignment="inherit"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/mCityNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:padding="1dp"
+                android:hint="dsff"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textAlignment="inherit"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>

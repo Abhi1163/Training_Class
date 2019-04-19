@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flFindClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlTab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    style="@style/MyTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabBackground="@drawable/bg_tab_background"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabMode="scrollable"
+                    android:textSize="12sp"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@color/black" />
+                <!--
+                    app:tabIndicatorColor="@color/orange"
+                    app:tabSelectedTextColor="@color/orange"-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/search_layout"
+                    android:visibility="gone" />
+
+
+                <FrameLayout
+                    android:id="@+id/flClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/search_layout"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llMap"
+                    android:layout_below="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <fragment
+                        android:id="@+id/mapView"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </fragment>
+                </LinearLayout>
+
+                <!--   <com.google.android.gms.maps.MapView
+                       android:id="@+id/mapView"
+                       android:name="com.google.android.gms.maps.SupportMapFragment"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:layout_weight="1"
+                       android:visibility="gone" />-->
+
+
+                <RelativeLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/tabs"
+                    android:background="@color/colorPrimary"
+                    android:padding="9dp"
+                    android:visibility="gone">
+
+                    <com.hobbyer.android.widget.customfonts.MyEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/white"
+                        android:drawablePadding="12dp"
+                        android:hint="@string/find_a_class_take_it_for_free_start_trial"
+                        android:minHeight="?attr/actionBarSize"
+                        android:padding="10dp"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_filter"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="10dp"
+                app:maxImageSize="70dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+
+            <com.hobbyer.android.widget.CircularImageView
+                android:id="@+id/imUserImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:elevation="3dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/placeholder"
+                app:border="true"
+                app:border_color="@color/notification_action_color_filter"
+                app:border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imUserImage"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/mUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:singleLine="true"
+                    android:text="@string/txt_block_user"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:font_name="monAlRegular" />
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/mUserLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:singleLine="true"
+                    android:text="@string/txt_block_user"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:font_name="monAlRegular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_text_black"
+                        android:orientation="vertical">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/mAccept"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/txt_accept"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            app:font_name="monAlRegular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layIgnore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_text_black"
+                        android:orientation="vertical">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/mIgonre"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/txt_ignore"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            app:font_name="monAlRegular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layBlock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_text_black"
+                        android:orientation="vertical">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/mBlock"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:text="@string/txt_block"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            app:font_name="monAlRegular" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

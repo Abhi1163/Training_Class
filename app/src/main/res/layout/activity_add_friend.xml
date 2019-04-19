@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <include
+           android:id="@+id/toolbar"
+           layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_round_addfriend"
+        android:layout_marginEnd="10dp">
+        <RelativeLayout
+            android:id="@+id/rlAddByName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:src="@drawable/ic_user"
+                android:id="@+id/iv_addfriend"
+                android:layout_alignParentStart="true"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp" />
+            <com.hobbyer.android.widgets.MyTextView
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/iv_addfriend"
+                android:text="Add By Name"
+                android:layout_centerVertical="true"
+                android:id="@+id/tvAddFriend"
+                app:font_name="monAlRegular"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+            <ImageView
+                android:src="@drawable/ic_chevron_right"
+                android:id="@+id/iv_arror_right"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b6b6b6"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:src="@drawable/ic_fb"
+                android:id="@+id/iv_addfriend_row2"
+                android:layout_alignParentStart="true"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp" />
+            <com.hobbyer.android.widgets.MyTextView
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/iv_addfriend_row2"
+                android:text="Add From Facebook"
+                app:font_name="monAlRegular"
+                android:layout_centerVertical="true"
+                android:id="@+id/tvAddFriendrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+            <ImageView
+                android:src="@drawable/ic_chevron_right"
+                android:id="@+id/iv_arror_right_row2"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+    </LinearLayout>
+</layout>

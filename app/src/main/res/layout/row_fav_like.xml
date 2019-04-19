@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.favouriteuserview.FavouriteUserViewResponseContentList" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:elevation="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/white_background_layout"
+        android:padding="5dp">
+        <ProgressBar
+            android:id="@+id/pbFav"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/ivGymImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_image" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10">
+
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvGymName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="Gym Time"
+            app:font_name="monRegular"
+
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+
+            <ImageView
+                android:id="@+id/ivLikeFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:visibility="visible"
+                android:src="@mipmap/ic_heart_dark"
+                />
+
+            <ImageView
+                android:id="@+id/ivUnLikeFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@mipmap/ic_heart"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

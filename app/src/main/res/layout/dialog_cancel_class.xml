@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you Sure?"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:lineSpacingExtra="2pt"
+                android:textColor="@color/grey"
+
+                android:text="This class starts within the next 2 hours,so cancelling your reservation later will result in face"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20">
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:text="Cancel"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_30"
+                    android:minHeight="35dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_grey"/>
+                <Button
+                    android:id="@+id/btnCancelReservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel Reservation"
+                    android:padding="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:minHeight="35dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_button_yellow"
+                    android:textColor="@color/black"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_cross"
+
+            android:layout_gravity="end"/>
+    </FrameLayout>
+</layout>

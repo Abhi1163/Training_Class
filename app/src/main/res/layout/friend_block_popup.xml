@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="170dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/city_dp_20"
+        android:layout_marginRight="@dimen/city_dp_20"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvTitleSure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Are you sure you want "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:font_name="monAlRegular" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_dp_40"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="left|center"
+                android:layout_marginRight="@dimen/city_dp_10"
+                android:orientation="vertical">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/btConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/txt_unfriend"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:font_name="monAlRegular" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:layout_marginLeft="@dimen/city_dp_10"
+                android:gravity="right|center_vertical"
+                android:onClick="@{(v)->viewModel.onClickView(v)}"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/btCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:background="@color/bittersweet"
+                    android:text="@string/txt_block"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:font_name="monAlRegular" />
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

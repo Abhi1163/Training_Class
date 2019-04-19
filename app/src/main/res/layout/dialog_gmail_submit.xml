@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_keep_me">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <com.hobbyer.android.widget.customfonts.MyTextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="3"
+            android:text="@string/we_re_not_in_your_city"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.hobbyer.android.widget.customfonts.MyTextView
+            android:id="@+id/tvSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/messageEmail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sign_dp_12"
+            android:visibility="visible" />
+
+
+        <com.hobbyer.android.widget.customfonts.MyEditText
+            android:id="@+id/etEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/bg_edittext"
+            android:gravity="left|center"
+            android:hint="@string/email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sign_dp_12" />
+
+        <TextView
+            android:id="@+id/tvEmailError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/city_dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/city_dp_10"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <!-- <TextView
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:gravity="center"
+             android:textColor="@color/black"
+             android:textSize="14sp"
+             android:text="You can signup using your Email Account."/>
+ -->
+
+
+        <TextView
+            android:id="@+id/btYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="@{(v)->viewModel.onClickView(v)}"
+            android:text="@string/keepme"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/border" />
+
+        <TextView
+            android:id="@+id/btCityNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:onClick="@{(v)->viewModel.onClickView(v)}"
+            android:text="No"
+            android:textColor="@color/text" />
+</LinearLayout>
+</RelativeLayout>

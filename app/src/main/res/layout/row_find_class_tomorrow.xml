@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:background="@drawable/bg_row"
+
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:padding="8dp">
+
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hint_text"
+                    android:hint="jksdfcv"
+                    android:textSize="14sp" />
+
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:id="@+id/tvMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hint_text"
+                    android:hint="jksdfcv"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:id="@+id/tvGymName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="jksdfcv"
+                    android:textStyle="bold" />
+
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:id="@+id/tvGymDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="jksdfcv"
+                    android:textSize="14sp" />
+
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:id="@+id/tvGymAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style= "@style/CustomRatingBar"
+                        android:numStars="5"
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center"
+                        android:stepSize="0.01"
+                        android:visibility="gone"
+                        android:isIndicator="true"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:rating="3"
+                        android:colorControlActivated="@color/colorPrimary"
+                        android:colorControlNormal="@color/black"
+                        android:numStars="5"
+                        android:progressTint="@color/colorPrimary"
+                        android:progressBackgroundTint="@color/black"
+                        android:secondaryProgressTint="@color/black"
+                        android:isIndicator="@color/black"
+                        android:padding="2dp" />
+
+                    <com.hobbyer.android.widget.customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:gravity="center"
+                        android:text="4.4"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.hobbyer.android.widget.customfonts.MyButton
+                android:id="@+id/btGymPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/city_dp_25"
+                android:minHeight="@dimen/dp_30"
+                android:background="@drawable/bg_button_black"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="10 Point"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pbFind"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    </LinearLayout>

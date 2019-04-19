@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/signup_dp5"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@mipmap/ic_menu"
+            android:visibility="invisible"/>
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:singleLine="true"
+            app:font_name="monRegular"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@id/ivLocation"
+            android:src="@mipmap/ic_search"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tvRight"
+            android:src="@mipmap/ic_location"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@id/ivLocation"
+            android:src="@mipmap/ic_heart"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/ivUnLike"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@id/ivLocation"
+            android:src="@mipmap/ic_heart_dark"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/ivEvent"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tvRight"
+            android:src="@mipmap/ic_cal"
+            android:visibility="invisible"
+            />
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Points"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="@dimen/dp_5"
+            android:textSize="10dp"
+            app:font_name="monRegular"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:visibility="invisible"
+            android:background="@color/border"
+            android:layout_below="@id/ivBack"/>
+
+
+    </RelativeLayout>
+</layout>

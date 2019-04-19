@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/mTotalAmounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.15"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7:00 am"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_15"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="120 min"
+                    android:singleLine="true"
+                    android:textSize="@dimen/row_dp1"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/mHotelName"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gym Time"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/mLocationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="Gold’s Gym-RockvilleRockville"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_17"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/row_dp2"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_row_black"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+                <com.hobbyer.android.widget.customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="40 Point"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sign_dp_12"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

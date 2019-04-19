@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.api.response.auth.homepage.HomePageContentList"/>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/mMainActivitysr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_5"
+                        android:background="@drawable/bg_back_layout"
+                        android:gravity="center">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/let_s_go"
+                            android:textColor="@color/black"
+                            app:font_name="monSemibold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="horizontal">
+
+
+
+                        <com.hobbyer.android.widgets.MyTextView
+                                android:id="@+id/tvUpcoming"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:gravity="start"
+                                android:text="@string/_0_upcoming"
+                                app:font_name="monRegular"
+                                android:textColor="@color/black" />
+
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvCompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_20"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:gravity="end"
+                            android:text="@string/_0_completed"
+                            android:textColor="@color/black"
+
+                            app:font_name="monRegular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRecy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ProgressBar
+                                android:id="@+id/mProgressBar"
+                                android:visibility="gone"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"/>
+                            <android.support.v4.widget.SwipeRefreshLayout
+                                android:id="@+id/swipeContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rvHomePage"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                </android.support.v7.widget.RecyclerView>
+                            </android.support.v4.widget.SwipeRefreshLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llNoData"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvNoData"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            app:font_name="monRegular"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:text="No Data Found"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "707972609513",
+    "firebase_url": "https://classpass-71212.firebaseio.com",
+    "project_id": "classpass-71212",
+    "storage_bucket": "classpass-71212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707972609513:android:ab859d85712cc4e5",
+        "android_client_info": {
+          "package_name": "com.hobbyer.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707972609513-4ma8gi7e9pb9lam4anj2r98t99nrer4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIWIjtAEk6hhgTRzLhyog33IYccQNGB_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707972609513-4ma8gi7e9pb9lam4anj2r98t99nrer4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

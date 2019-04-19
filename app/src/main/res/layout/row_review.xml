@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.review.ReviewContentList" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RatingBar
+            android:id="@+id/rbStudioReview"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:clickable="false"
+            android:colorControlActivated="@color/colorPrimary"
+            android:colorControlNormal="@color/black"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgressTint="@color/black"
+            android:stepSize=".1" />
+
+        <com.hobbyer.android.widget.customfonts.MyTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|center"
+            android:gravity="end|center"
+            android:paddingEnd="5dp"
+            android:text="2 days go"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.hobbyer.android.widget.customfonts.MyTextView
+        android:id="@+id/tvStudioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off-peak full body"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.hobbyer.android.widget.customfonts.MyTextView
+        android:id="@+id/tvStudioFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Off-peak full body"
+        android:textColor="@color/grey"
+        android:textSize="13sp" />
+
+
+</LinearLayout>
+
+</layout>

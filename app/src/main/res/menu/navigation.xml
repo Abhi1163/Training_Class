@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mHome"
+            android:enabled="true"
+            android:icon="@mipmap/ic_home"
+            android:title="@string/home"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/mFindClass"
+            android:enabled="true"
+            android:icon="@mipmap/ic_find"
+            android:title="@string/find_class"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mVideo"
+            android:enabled="true"
+            android:icon="@mipmap/ic_video"
+            android:title="@string/video"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mBookingHistory"
+            android:enabled="true"
+            android:icon="@mipmap/ic_booking"
+            android:title="@string/booking"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mUpcoming"
+            android:enabled="true"
+            android:icon="@mipmap/ic_upcoming"
+            android:title="@string/upcoming"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mProfile"
+            android:enabled="true"
+            android:icon="@mipmap/ic_profile"
+            android:title="@string/profile"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/mReferEarn"
+            android:enabled="true"
+            android:icon="@mipmap/ic_refer"
+            android:title="@string/refer"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mSetting"
+            android:enabled="true"
+            android:icon="@mipmap/ic_settings"
+            android:title="@string/setting"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mLogOut"
+            android:enabled="true"
+            android:icon="@mipmap/ic_logout"
+            android:title="@string/Logout"
+            app:showAsAction="ifRoom" />
+    </group>
+
+</menu>

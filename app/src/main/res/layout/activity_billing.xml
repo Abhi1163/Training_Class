@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <TextView
+            android:id="@+id/tvRewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_edittext_transparent"
+            android:singleLine="true"
+            android:text="@string/rewards"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvBillingInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/billing_information"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:font_name="monSemibold" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvUpdatedCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/city_dp_25"
+            android:text="@string/updated_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:font_name="monRegular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tvBilling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing_information"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:font_name="monAlSemi" />
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tvAddCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Update Card"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:font_name="monmedium"
+                    tools:ignore="PrivateResource" />
+
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/single_edit_texg_top_margin_first"
+                            android:orientation="vertical">
+
+
+                            <com.hobbyer.android.widgets.MyEditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_edittext"
+                                android:hint="@string/name_on_card"
+                                android:textSize="12sp"
+                                android:padding="@dimen/edit_text_padding"
+
+                                android:singleLine="true" />
+
+                            <com.hobbyer.android.widgets.MyTextView
+                                android:id="@+id/tvNameError"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/city_dp_5"
+                                android:textColor="@color/red"
+                                android:visibility="gone"
+                                app:font_name="monRegular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1.4"
+                                android:orientation="vertical">
+
+
+                               <!-- <com.hobbyer.android.widgets.MyTextInputEditText
+                                    android:id="@+id/et_card"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_edittext"
+                                    android:backgroundTint="@color/grey"
+                                    android:gravity="start"
+                                    android:hint="@string/card_number"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:longClickable="false"
+                                    android:maxLength="20"
+                                    android:padding="@dimen/edit_text_padding"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />-->
+
+
+                                  <com.hobbyer.android.widgets.MyEditText
+                                      android:id="@+id/et_card"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:background="@drawable/bg_edittext"
+                                      android:hint="@string/card_numbers"
+                                      android:maxLength="20"
+                                      android:inputType="number"
+                                      android:padding="@dimen/edit_text_padding"
+                                      android:singleLine="true"
+                                      android:textSize="12sp" />
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:id="@+id/tvCardNumberError"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/city_dp_5"
+                                    android:textColor="@color/red"
+                                    android:visibility="gone"
+                                    app:font_name="monRegular" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight=".6"
+                                android:orientation="vertical">
+
+
+                                <com.hobbyer.android.widgets.MyEditText
+                                    android:id="@+id/et_cvv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="@dimen/edit_text_margin_left"
+                                    android:background="@drawable/bg_edittext"
+                                    android:hint="@string/cvv"
+                                    android:inputType="numberPassword"
+                                    android:maxLength="4"
+                                    android:padding="@dimen/edit_text_padding"
+                                    android:singleLine="true"
+                                    android:textSize="12sp" />
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:id="@+id/tvCvvError"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/city_dp_5"
+                                    android:textColor="@color/red"
+
+                                    android:visibility="gone"
+                                    app:font_name="monRegular" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.hobbyer.android.widgets.MyTextInputEditText
+                                    android:id="@+id/etExpirary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_edittext"
+                                    android:gravity="start"
+                                    android:hint="@string/expiration_date"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:longClickable="false"
+                                    android:maxLength="7"
+                                    android:padding="@dimen/dp_10"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:id="@+id/tvExpiratonError"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/city_dp_5"
+                                    android:textColor="@color/red"
+                                    android:visibility="gone"
+                                    app:font_name="monRegular" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.hobbyer.android.widgets.MyEditText
+                                    android:id="@+id/etBillingPostal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="@dimen/edit_text_margin_left"
+                                    android:background="@drawable/bg_edittext"
+                                    android:hint="Billing Postal Code"
+                                    android:inputType="number"
+                                    android:maxLength="8"
+                                    android:padding="@dimen/edit_text_padding"
+                                    android:singleLine="true"
+                                    android:textSize="12sp" />
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:id="@+id/tvPostalError"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/city_dp_5"
+                                    android:textColor="@color/red"
+                                    android:visibility="gone"
+                                    app:font_name="monRegular" />
+                            </LinearLayout>
+
+                            <com.hobbyer.android.widgets.MyTextView
+                                android:id="@+id/number_error"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red"
+                                app:font_name="monRegular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="@string/saveandcontinue"
+                    android:textAllCaps="false"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

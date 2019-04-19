@@ -1,0 +1,113 @@
+
+<layout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#A8A8A8"/>
+
+    <LinearLayout
+        android:id="@+id/search_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/viewLine"
+        android:background="@color/yellow"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/search_input"
+                style="@style/TextInputEditTextStyles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+               android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/bg_edittext"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/grey"
+                android:imeOptions="actionSend"
+                android:drawablePadding="@dimen/dp_10"
+                android:singleLine="true"
+                android:drawableStart="@mipmap/ic_search"
+                android:inputType="text"
+                android:windowSoftInputMode="stateAlwaysHidden" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/clear_btn_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_item_round_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_close_gary_24dp"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_view_layout_v"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/search_view_layout"
+        android:background="@drawable/above_shadow_rect" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/CounrtriesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_view_layout_v"
+        android:background="@color/white"
+        android:scrollbars="none"
+        tools:listitem="@layout/row_countries" />
+
+    <com.hobbyer.android.widget.RecyclerViewFastScroller
+        android:id="@+id/fastscroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/CounrtriesList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/CounrtriesList"
+        android:gravity="center"
+        android:visibility="visible" />
+    <ProgressBar
+        android:id="@+id/mProgressBarImages"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:hint="sdfsdffdsfsdf"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:hint="dhgfggdfg"
+        android:textSize="16sp"/>
+</RelativeLayout>
+</layout>

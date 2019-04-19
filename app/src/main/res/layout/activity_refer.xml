@@ -1,0 +1,115 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_row"
+        android:elevation="6dp">
+
+
+        <ImageView
+            android:id="@+id/iv_mainImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_referearn" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tv_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_mainImage"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/invitation"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:font_name="monmedium" />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_invitation"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/share_the_app"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:font_name="monRegular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvShare"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical"
+            app:elevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <ImageView
+                    android:id="@+id/iv_skype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@mipmap/share_1"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/iv_wattsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/iv_skype"
+                    android:layout_margin="1dp"
+                    android:src="@mipmap/fbshare"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/iv_insta"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/city_dp_50"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_insta"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/iv_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_margin="1dp"
+                    android:src="@mipmap/fbshare"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/iv_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:src="@mipmap/google_plus"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

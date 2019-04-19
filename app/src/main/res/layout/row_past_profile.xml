@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_row"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="4dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <com.hobbyer.android.widget.customfonts.MyTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Dec 2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:font_name="monmedium" />
+
+            <com.hobbyer.android.widget.customfonts.MyTextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:text="7:15 am "
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:font_name="monRegular" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:background="#40739bdf" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <com.hobbyer.android.widget.customfonts.MyTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BFX Build"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:font_name="monmedium" />
+
+            <com.hobbyer.android.widget.customfonts.MyTextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="The P.E. Build"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:font_name="monRegular" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_feedback"
+            android:minHeight="30dp"
+            android:text="Feedback"
+            android:textSize="12sp" />
+    </LinearLayout>
+</layout>

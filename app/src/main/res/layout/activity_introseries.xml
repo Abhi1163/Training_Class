@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.activity.intro.IntroSeriesActivityViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarSecond"
+            layout="@layout/toolbar_second" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_background_layout"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+
+                    <hb.xvideoplayer.MxVideoPlayerWidget
+                        android:id="@+id/vvVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_image" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <com.hobbyer.android.widgets.MyTextView
+                        android:id="@+id/tvVideoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIIT I"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:font_name="monAlSemi" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvActivity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Instructor"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvInstructor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:singleLine="true"
+                            android:text="Intro Series"
+
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvActivities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivity"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Activity"
+                            android:textColor="@color/black"
+
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivity"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvActivityText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivity"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="HIIT"
+                            android:textColor="@color/black"
+
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvequipment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivities"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="Equipment needed"
+
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivities"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvEquipment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvActivities"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="Exercise Mat"
+
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvBodyFocus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvequipment"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Body Focus"
+                            android:textColor="@color/black"
+
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvequipment"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+
+                            app:font_name="monmedium" />
+
+                        <com.hobbyer.android.widgets.MyTextView
+                            android:id="@+id/tvBodyFocusText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvequipment"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:singleLine="true"
+                            android:text="Full Body"
+
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:font_name="monmedium" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <com.hobbyer.android.widgets.MyTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="14dp"
+                    android:text="How to prepare"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:font_name="monAlSemi" />
+
+
+                <com.hobbyer.android.widgets.MyTextView
+                    android:id="@+id/tvHowTo"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvequipment"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="15dp"
+
+                    android:text="@string/about_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:font_name="monmedium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#f5f5f5"
+                    android:orientation="vertical">
+
+
+                    <com.hobbyer.android.widgets.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="About"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:font_name="monAlSemi" />
+
+
+                    <com.hobbyer.android.widgets.MyTextView
+                        android:id="@+id/tvAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvequipment"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="15dp"
+
+                        android:text="@string/about_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:font_name="monmedium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

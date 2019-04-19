@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBacks"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/ic_menu"
+            android:visibility="invisible"/>
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxWidth="@dimen/city_dp_50"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:text="Fitness toattain videos"
+            app:font_name="monRegular"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@+id/ivLocations"
+            android:src="@mipmap/ic_heart"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/ivUnLikes"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@id/ivLocations"
+            android:src="@mipmap/ic_heart_dark"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/ivLocations"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_forward"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            />
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvRights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Points"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toLeftOf="@+id/ivLocations"
+            android:layout_centerInParent="true"
+            android:textSize="10dp"
+            app:font_name="monRegular"
+
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+</layout>

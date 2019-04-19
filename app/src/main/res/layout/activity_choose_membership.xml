@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.activity.choosemembership.ChooseMembershipViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/llFreeTrial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_button_yellow"
+            android:gravity="center"
+            android:onClick="@{(v)->viewModel.onClickView(v)}"
+            android:padding="15dp"
+            android:text="Free Trail"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:font_name="monSemibold" />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:background="@drawable/bg_button_yellow"
+              >-->
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/llStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_button_yellow"
+            android:gravity="center"
+            android:onClick="@{(v)->viewModel.onClickView(v)}"
+            android:padding="15dp"
+            android:text="Get A Membership"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:font_name="monSemibold" />
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">70dp</dimen>
+    <dimen name="layout_margin_bottom">100dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_1">0.1dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_164">164dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="city_dp_50">50dp</dimen>
+    <dimen name="city_dp_20">20dp</dimen>
+    <dimen name="city_dp_4">4dp</dimen>
+    <dimen name="signup_dp1">40dp</dimen>
+    <dimen name="signup_dp2">30dp</dimen>
+    <dimen name="signup_dp3">15dp</dimen>
+    <dimen name="signup_dp4">12dp</dimen>
+    <dimen name="signup_dp5">8dp</dimen>
+    <dimen name="signup_dp6">10dp</dimen>
+    <dimen name="signup_dp7">25dp</dimen>
+    <dimen name="signup_dp8">25dp</dimen>
+    <dimen name="resetPwd_dp3">10dp</dimen>
+</resources>

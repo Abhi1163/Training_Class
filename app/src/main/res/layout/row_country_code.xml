@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/llCountry"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        >
+
+        <com.hobbyer.android.widget.customfonts.MyTextView
+            android:id="@+id/tvCountryCode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:gravity="start"
+            android:textSize="14sp"
+
+            />
+
+        <com.hobbyer.android.widget.customfonts.MyTextView
+            android:id="@+id/tvName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</layout>
+

@@ -1,0 +1,60 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="40dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.100"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.hobbyer.android.widget.CircularImageView
+                android:id="@+id/imUserProfile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_avtar"
+                android:elevation="3dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                app:border="true"
+                app:border_color="@color/notification_action_color_filter"
+                app:border_width="2dp"
+                />
+            <TextView
+                android:id="@+id/txUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/llProfile"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginRight="30dp"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

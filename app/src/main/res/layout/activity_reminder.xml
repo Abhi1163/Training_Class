@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hobbyer.android.viewmodel.activity.event.ReminderViewModel" />
+    </data>
+
+    <LinearLayout
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_20"
+        android:layout_gravity="center_vertical"
+
+        android:background="@drawable/bg_row">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:text="No Reminder"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:background="@mipmap/ic_on" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+
+            android:background="@mipmap/ic_off" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/Reminder"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:checked="true">
+
+                <RadioButton
+                    android:id="@+id/radioEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:checked="true"
+                    android:padding="@dimen/dp_10"
+                    android:text="Before the event" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="5 Minutes"
+                    android:padding="@dimen/dp_10"
+                    />
+
+                <RadioButton
+                    android:id="@+id/Minutes_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="10 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="15 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="20 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="25 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="30 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="35 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="40 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="45 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="50 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Minutes_55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="55 Minutes" />
+
+                <RadioButton
+                    android:id="@+id/Hours_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="1 Hours" />
+
+                <RadioButton
+                    android:id="@+id/Day_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="1 Day" />
+
+                <RadioButton
+                    android:id="@+id/Weeks_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:buttonTint="@color/black"
+                    android:text="7 Weeks" />
+            </RadioGroup>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

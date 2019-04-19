@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.upcomingclasses.UpComingClassesContentList" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_row"
+        android:elevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_row"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pbUpComing"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imStudioImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_image" />
+                    <RelativeLayout
+                        android:id="@+id/layout_locations_container"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="180dp"
+                        android:visibility="gone"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tvUpComingStudioName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="2"
+                    android:text="Gym Time"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvUpComingStudioDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/text"
+                    android:textSize="14dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvUpComingStudioDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="4"
+                    android:text="Gold’s Gym-Wintergreen Plagdfg fgdfb gfdb  gdfgfv xgdrfg gdfgfg"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:id="@+id/llUpComingFindClass"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_row_black"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="View Class"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_row"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.5"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/ic_profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="10dp"
+                    android:text="Invite Friends" />
+
+                <ImageView
+                    android:id="@+id/ivLikeUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    android:src="@mipmap/ic_heart" />
+                <ImageView
+                    android:id="@+id/ivUnLikeUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/ic_heart_dark"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/ivEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/ic_cal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

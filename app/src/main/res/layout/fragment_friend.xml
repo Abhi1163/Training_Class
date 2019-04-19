@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/mMainActivitysr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="6dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <com.hobbyer.android.widgets.MyTextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="@dimen/dp_10"
+                                android:layout_marginEnd="@dimen/dp_10"
+                                android:gravity="center"
+                                android:text="Coming Soon"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mFriendLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/friend_request_recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:id="@+id/layAddFriend"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40sp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginRight="50dp"
+                                    android:background="@drawable/bg_button_yellow"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <com.hobbyer.android.widget.customfonts.MyTextView
+                                        android:layout_width="130dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:drawableStart="@mipmap/addfriend"
+                                        android:drawablePadding="5dp"
+                                        android:lines="1"
+                                        android:text="@string/add_friends"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/sign_dp_12" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <RelativeLayout
+                                android:id="@+id/mHeader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/rectangle_black"
+                                    android:orientation="horizontal"
+                                    android:padding="0dp"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <com.hobbyer.android.widgets.MyTextView
+                                            android:id="@+id/ivFriendPro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:background="@color/colorPrimary"
+                                            android:gravity="center"
+                                            android:padding="0dp"
+                                            android:text="@string/txt_firnds"
+                                            android:textColor="@color/black"
+
+
+                                            android:textSize="15sp"
+                                            app:font_name="monAlRegular" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/space"
+                                        android:padding="10dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <com.hobbyer.android.widgets.MyTextView
+                                            android:id="@+id/ivBlockUser"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:gravity="center"
+                                            android:singleLine="true"
+                                            android:text="@string/txt_block_user"
+                                            android:textColor="@color/black"
+                                            android:textSize="15sp"
+                                            app:font_name="monAlRegular" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/mHeader"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/friend_recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/block_recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tvFriend"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="@dimen/dp_30"
+                                    android:layout_marginBottom="@dimen/dp_30"
+                                    android:textColor="@color/black"
+
+                                    android:text="No friend found."/>
+
+
+                                <com.hobbyer.android.widgets.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="1dp"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="@string/txt_block_user"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:visibility="gone"
+                                    app:font_name="monAlRegular" />
+
+                                <!--</FrameLayout>-->
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</layout>

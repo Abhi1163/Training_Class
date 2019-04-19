@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="bookingList"
+            type="com.hobbyer.android.api.response.auth.filter.CategoryListContentList" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/pbFilter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/llFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flOuter"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_rect">
+
+                <ImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/ic_art"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ivFilterImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/yellow"
+                    android:padding="18dp"
+                    android:src="@mipmap/ic_art_sel"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvFilterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="fgdfgedfgdfgdfgfgfg"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

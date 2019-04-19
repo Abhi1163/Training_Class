@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mPastLinear"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mPastRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:elevation="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+        <com.hobbyer.android.widgets.MyTextView
+            android:id="@+id/tvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:font_name="monRegular"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="No Past Classes."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="12dp"
+        android:visibility="gone">
+        <com.hobbyer.android.widget.customfonts.MyTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="Coming Soon"
+            />
+    </LinearLayout>
+    <!--<include
+        layout="@layout/row_find_class"
+        />
+    <include
+        android:layout_marginTop="4dp"
+        layout="@layout/row_find_class"
+        android:layout_height="80dp"
+        android:layout_width="match_parent" />-->
+</LinearLayout>

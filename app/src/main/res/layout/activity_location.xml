@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--   <fragment
+               android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/fragmentautocomplete"/>-->
+        <LinearLayout
+            android:id="@+id/search_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/yellow"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvplacename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/bg_search_yellow"
+                android:drawableStart="@mipmap/ic_search"
+                android:drawablePadding="@dimen/dp_10"
+                android:hint="@string/search "
+                android:singleLine="true"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
